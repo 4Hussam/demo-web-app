@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity Demo | لوحة تحكم ترحيبية</title>
+    <!-- Google Fonts: Cairo & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    
+    <main class="container">
+        <!-- Header -->
+        <header class="hero">
+            <div class="badge">
+                <span class="pulse-dot"></span>
+                <span>مشروع تجريبي آلي بواسطة Antigravity</span>
+            </div>
+            <h1>مرحباً بك في عالم <span class="gradient-text">الجيل القادم</span> للبرمجة</h1>
+            <p class="subtitle">تم إنشاء هذا المشروع وتطويره بالكامل بواسطة مساعد الذكاء الاصطناعي مع إعداده للرفع على Git تلقائياً.</p>
+            
+            <div class="hero-actions">
+                <button id="counterBtn" class="btn btn-primary">
+                    <i class="fa-solid fa-bolt"></i>
+                    تفاعل مع الزر: <span id="counterValue">0</span>
+                </button>
+                <button id="themeToggle" class="btn btn-glass">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    تغيير النمط
+                </button>
+            </div>
+        </header>
+
+        <!-- Feature Grid -->
+        <section class="grid">
+            <div class="card glass">
+                <div class="card-icon gradient-1">
+                    <i class="fa-solid fa-code-branch"></i>
+                </div>
+                <h3>تكامل Git آلي</h3>
+                <p>تهيئة المستودع، إنشاء الأوامر والتزامن مع GitHub بضغطة زر دون عناء.</p>
+            </div>
+
+            <div class="card glass">
+                <div class="card-icon gradient-2">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+                <h3>تصميم فخم وتفاعلي</h3>
+                <p>واجهات حديثة تدعم Glassmorphism، التجاوب الكامل، وألوان نيون وجذابة.</p>
+            </div>
+
+            <div class="card glass">
+                <div class="card-icon gradient-3">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <h3>أداء فائق للسرعة</h3>
+                <p>كود خفيف ومهيأ بالكامل بأحدث معايير الويب للوصول لأفضل أداء.</p>
+            </div>
+        </section>
+
+        <!-- Terminal Status Card -->
+        <section class="terminal-card glass">
+            <div class="terminal-header">
+                <div class="dots">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <span class="terminal-title">Git Command Monitor</span>
+            </div>
+            <div class="terminal-body" id="terminalBody">
+                <p><span class="prompt">$</span> git init</p>
+                <p class="success">✓ Initialized empty Git repository</p>
+                <p><span class="prompt">$</span> git add .</p>
+                <p class="success">✓ Staged all files for initial commit</p>
+                <p><span class="prompt">$</span> git commit -m "feat: Initial commit for demo web app"</p>
+                <p class="info">ℹ Ready to set remote origin & push!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>تم التطوير بواسطة <strong>Antigravity AI</strong> • 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
